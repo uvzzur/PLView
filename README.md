@@ -53,7 +53,7 @@ final/
 - **2D connection graph:** Circular layout with PLV colorbar; click electrodes to inspect strongest connection.
 - **Info panel:** Patient ID, electrode count, strongest connection (PLV value, electrode pair, network).
 
-![Demo 6 channels](assets/demo_6_channels.jpg)
+![Demo 6 channels](assets/PLView_demo.gif)
 
 ## Requirements
 
