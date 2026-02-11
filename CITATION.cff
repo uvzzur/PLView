@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: PLView
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Zur
+    given-names: Yuval
+    email: yuvalzzur@gmail.com
+version: 1.0.9.4
+date-released: 2025-10-01
+url: "https://www.mathworks.com/matlabcentral/fileexchange/182041-plview"
+keywords:
+  - MATLAB
+  - ECoG
+  - PLV
+  - phase locking value
+  - connectivity
+  - visualization
+license: MIT

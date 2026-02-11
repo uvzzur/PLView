@@ -1,0 +1,16 @@
+# MATLAB
+*.asv
+*.m~
+*.autosave
+*.mlapp.bak
+*.mlapp~
+MLAPP_*
+dependency_*.xml
+requiredMCRProducts.txt
+
+# Installer (use File Exchange to install instead)
+*.mlappinstall
+
+# OS
+.DS_Store
+Thumbs.db

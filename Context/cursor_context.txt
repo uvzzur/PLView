@@ -1,0 +1,72 @@
+PROJECT: PLView (MATLAB App Designer capstone)
+
+PRIMARY GOAL:
+Make this folder GitHub-ready (repo structure + README + essentials) WITHOUT changing any code.
+
+NON-NEGOTIABLE CONSTRAINTS:
+1) Do NOT modify PLView.mlapp or any .m source logic (no refactors, no path fixes, no renaming variables inside code).
+2) You MAY move files and add new documentation files.
+3) If there are hardcoded absolute paths or lab-specific dependencies, do NOT change them; document them in README under “Environment & Data Requirements”.
+4) Ignore /dummy data/untitled.m completely.
+5) Do not include any sensitive/patient data; keep demo data as-is (if present) and state privacy clearly.
+6) Do not claim features unless proven by reading the code (PLView.mlapp) or existing docs.
+
+WHAT PLVIEW IS (ONLY SAFE HIGH-LEVEL CLAIMS):
+- MATLAB App Designer application (.mlapp).
+- Intended for ECoG connectivity visualization using PLV (Phase Locking Value).
+- Produces interactive visualizations including a 3D brain and a 2D connectivity view (if confirmed by code/UI labels).
+
+REQUIRED OUTPUTS (FILES TO CREATE):
+- README.md (professional, technical, no fluff)
+- LICENSE (MIT)
+- .gitignore (MATLAB focused)
+- docs/user_guide.md
+- docs/developer_notes.md
+- (optional) CITATION.cff (only if you can fill it without guessing)
+
+REPO ORGANIZATION TARGET:
+- app/              -> contains PLView.mlapp
+- assets/           -> contains head3d.mat / screenshots / logo if present
+- data/             -> contains demo/sample input .mat files (if present) + schema notes
+- docs/             -> guides and notes
+- root files        -> README, LICENSE, .gitignore
+
+IMPORTANT: MOVING FILES MUST NOT BREAK RUNTIME
+- Because we are not allowed to edit code, moving files can break relative paths.
+- Before moving anything, scan PLView.mlapp (export code if needed) and search for:
+  load("..."), imread("..."), addpath("..."), fullfile(...), fopen(...), uigetfile filters, or any hardcoded relative paths.
+- Only move a file if doing so will not break these references.
+- If the code expects a file in a specific location, keep it there and document the expected location in README.
+
+README REQUIREMENTS (GROUNDING RULES):
+- Every feature listed must be supported by one of:
+  A) UI component labels found in the .mlapp code (e.g., button names, dropdown items), OR
+  B) functions/callback names or comments inside PLView.mlapp, OR
+  C) existing project documentation files.
+- If something is uncertain, mark it as “Depends on provided .mat structure / lab data” instead of asserting.
+
+README SECTIONS (MANDATORY):
+1) Overview (3–5 lines, purely factual)
+2) What’s in this repo (short structure list)
+3) Requirements (MATLAB version if found; toolboxes only if confirmed; otherwise say “MATLAB + required toolboxes as used by the app”)
+4) How to run (open .mlapp; any required files; steps)
+5) Input data format (extract real expected variable names from demo .mat or code; if not possible, document what can be inferred + a checklist)
+6) Environment & Data Requirements
+   - Document any absolute paths
+   - Document any required external electrode metadata file(s)
+   - Document head3d.mat expectation
+7) Privacy
+8) Limitations
+9) Citation / Acknowledgments (only factual)
+
+docs/user_guide.md:
+- Step-by-step usage grounded in UI labels
+
+docs/developer_notes.md:
+- Architecture: main callbacks, data flow, where PLV is computed (based on code), where plots update
+- List key functions and their roles (only if found in exported code)
+
+SUCCESS CRITERION:
+- Repo looks professional.
+- README is accurate and sourced from the code/files.
+- No code changes were made.
