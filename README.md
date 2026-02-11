@@ -2,7 +2,9 @@
 
 PLView is a MATLAB App Designer application for visualizing ECoG (electrocorticography) functional connectivity using Phase Locking Value (PLV). It provides an interactive 3D brain view and a 2D connection graph to explore phase–amplitude coupling between electrode pairs across user-selected frequency bands and test conditions.
 
-![PLView logo](PLView_logo.png)
+<p align="center">
+    <img src="PLView_logo.png" alt="PLView logo" width="150" />
+</p>
 
 ## What's in this repo
 
